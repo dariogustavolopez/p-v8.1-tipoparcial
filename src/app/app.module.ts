@@ -39,7 +39,8 @@ import { EmpresasComponent } from './components/articulos-familias/empresas/empr
       { path: '', redirectTo: '/inicio', pathMatch: 'full' },
       { path: 'inicio', component: InicioComponent },
       { path: 'articulos', component: ArticulosComponent },
-      { path: 'articulosfamilias', component: ArticulosFamiliasComponent }
+      { path: 'articulosfamilias', component: ArticulosFamiliasComponent },
+      { path: 'empresas', component: EmpresasComponent }
     ]),
     NgbPaginationModule,
     NgbModalModule,
