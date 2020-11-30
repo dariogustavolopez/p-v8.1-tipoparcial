@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Empresa } from "../../models/empresas";
-import { EmpresaFamilia } from "../../models/empresas-familia";
+import { Empresa } from "../../models/empresa";
 import { MockEmpresasService } from "../../services/mock-empresas.service";
 
 import { EmpresasService } from "../../services/empresas.service";
@@ -31,7 +30,7 @@ export class EmpresasComponent implements OnInit {
 
   Lista: Empresa[] = [];
   RegistrosTotal: number;
-  Familias: EmpresaFamilia[] = [];
+
   SinBusquedasRealizadas = true;
 
   Pagina = 1; // inicia pagina 1
@@ -123,7 +122,6 @@ export class EmpresasComponent implements OnInit {
       this.FormReg.controls.FechaFundacion.patchValue(
         arrFecha[2] + "/" + arrFecha[1] + "/" + arrFecha[0]
       );
-
       this.AccionABMC = AccionABMC;
     });
   }
